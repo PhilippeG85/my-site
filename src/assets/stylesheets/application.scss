@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  background-color: rgb(235, 245, 255);
+}
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.m-5 {
+  margin: 50px;
+}
+
+.underline {
+  text-decoration: underline;
+}
