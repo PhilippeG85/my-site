@@ -1,0 +1,22 @@
+.presentation {
+  padding: 86px;
+  margin: auto 0;
+}
+
+.contact-btn {
+  font-size: 20px;
+  color: #d4a373;
+  border: 2px solid #d4a373;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: ease .4s;
+  &:hover{
+    background-color: #d4a373;
+    color: rgb(80,80,80);
+    text-decoration: none;
+  }
+}
+
+.contact-btn-div {
+  margin: 24px;
+}
