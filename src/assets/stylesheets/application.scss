@@ -1,6 +1,9 @@
 @import "navbar";
 @import "presentation";
 @import "tags";
+@import "about";
+@import "skills";
+@import "loading";
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -20,6 +23,7 @@ body {
   width: 100vw;
   position: relative;
   display: flex;
+  flex-shrink: 0;
 }
 
 .right-content {
@@ -49,3 +53,11 @@ body {
 .underline {
   text-decoration: underline;
 }
+
+.set-animation {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+

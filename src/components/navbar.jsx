@@ -22,27 +22,69 @@ function Navbar() {
     return path === currentPath ? "active" : null;
   };
 
+  // const load = document.querySelector(".loading-page");
+  const handleClick = () => {
+    // load.classList.add('translate');
+    // setTimeout(() => {
+    //   load.classList.add("translat");
+    // }, 2000);
+    // setTimeout(() => {
+    //   load.classList.remove("translate", "translat");
+    // }, 3000);
+    console.log('null');
+  };
+
   return (
     <div className="navbar-element">
       <p className="p-icon">P</p>
       <div className="navbar-menu">
-        <Link className={`menu-element ${handlePath("/")}`} to="/" onMouseEnter={() => { setDisplayH(true); }} onMouseLeave={() => { setDisplayH(false); }}>
+        <Link
+          className={`menu-element ${handlePath("/")}`}
+          to="/"
+          onMouseEnter={() => { setDisplayH(true); }}
+          onMouseLeave={() => { setDisplayH(false); }}
+          onClick={() => handleClick()}
+        >
           <FontAwesomeIcon className="menu-icon" icon={faHome} style={{ display: displayH ? "none" : "block" }} />
           <p style={{ display: displayH ? "block" : "none" }}>Home</p>
         </Link>
-        <Link className={`menu-element ${handlePath("/about-me")}`} to="/about-me" onMouseEnter={() => { setDisplayA(true); }} onMouseLeave={() => { setDisplayA(false); }}>
+        <Link
+          className={`menu-element ${handlePath("/about-me")}`}
+          to="/about-me"
+          onMouseEnter={() => { setDisplayA(true); }}
+          onMouseLeave={() => { setDisplayA(false); }}
+          onClick={() => handleClick()}
+        >
           <FontAwesomeIcon className="menu-icon" icon={faUser} style={{ display: displayA ? "none" : "block" }} />
           <p style={{ display: displayA ? "block" : "none" }}>About</p>
         </Link>
-        <Link className={`menu-element ${handlePath("/projects")}`} to="/projects" onMouseEnter={() => { setDisplayP(true); }} onMouseLeave={() => { setDisplayP(false); }}>
+        <Link
+          className={`menu-element ${handlePath("/projects")}`}
+          to="/projects"
+          onMouseEnter={() => { setDisplayP(true); }}
+          onMouseLeave={() => { setDisplayP(false); }}
+          onClick={() => handleClick()}
+        >
           <FontAwesomeIcon className="menu-icon" icon={faEye} style={{ display: displayP ? "none" : "block" }} />
           <p style={{ display: displayP ? "block" : "none" }}>Projects</p>
         </Link>
-        <Link className={`menu-element ${handlePath("/skills")}`} to="/skills" onMouseEnter={() => { setDisplayS(true); }} onMouseLeave={() => { setDisplayS(false); }}>
+        <Link
+          className={`menu-element ${handlePath("/skills")}`}
+          to="/skills"
+          onMouseEnter={() => { setDisplayS(true); }}
+          onMouseLeave={() => { setDisplayS(false); }}
+          onClick={() => handleClick()}
+        >
           <FontAwesomeIcon className="menu-icon" icon={faBook} style={{ display: displayS ? "none" : "block" }} />
           <p style={{ display: displayS ? "block" : "none" }}>Skills</p>
         </Link>
-        <Link className={`menu-element ${handlePath("/contact")}`} to="/contact" onMouseEnter={() => { setDisplayC(true); }} onMouseLeave={() => { setDisplayC(false); }}>
+        <Link
+          className={`menu-element ${handlePath("/contact")}`}
+          to="/contact"
+          onMouseEnter={() => { setDisplayC(true); }}
+          onMouseLeave={() => { setDisplayC(false); }}
+          onClick={() => handleClick()}
+        >
           <FontAwesomeIcon className="menu-icon" icon={faEnvelope} style={{ display: displayC ? "none" : "block" }} />
           <p style={{ display: displayC ? "block" : "none" }}>Contact</p>
         </Link>
