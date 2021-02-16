@@ -11,6 +11,7 @@ import Presentation from "./presentation";
 import About from "./about";
 import Skills from "./skills";
 import Loading from "./loading";
+import Contact from "./contact";
 
 
 library.add(fab);
@@ -36,7 +37,7 @@ function App() {
               <Skills />
             </Route>
             <Route path="/contact">
-              <h1>Contact</h1>
+              <Contact />
             </Route>
           </Switch>
         </div>
