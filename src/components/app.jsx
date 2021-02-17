@@ -12,6 +12,7 @@ import About from "./about";
 import Skills from "./skills";
 import Loading from "./loading";
 import Contact from "./contact";
+import Projects from "./projects";
 
 
 library.add(fab);
@@ -31,7 +32,7 @@ function App() {
               <About />
             </Route>
             <Route path="/projects">
-              <h1>Projects</h1>
+              <Projects />
             </Route>
             <Route path="/skills">
               <Skills />
