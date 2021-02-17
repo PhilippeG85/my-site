@@ -30,3 +30,9 @@
   bottom: 172px;
   left: 584px;
 }
+
+@media screen and (max-width: 720px) {
+  .tags {
+    display: none;
+  }
+}

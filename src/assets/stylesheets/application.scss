@@ -29,8 +29,9 @@ body {
   flex-shrink: 0;
 }
 
+
 .right-content {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
 }
@@ -64,3 +65,12 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 720px) {
+  .landing-page {
+    flex-direction: column;
+    height: 100%;
+  }
+  .right-content {
+    justify-content: center;
+  }
+}

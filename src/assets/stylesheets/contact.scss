@@ -7,7 +7,7 @@
 
 .form-left {
   width: 450px;
-  padding: 0 12px 0 38px;
+  padding: 12px 12px 12px 38px;
 }
 
 .style-form-left {
@@ -19,4 +19,13 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+@media screen and (max-width: 720px) {
+  .contact-page {
+    flex-direction: column;
+  }
+  .map-right {
+    height: 450px;
+  }
 }

@@ -4,16 +4,16 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import './assets/stylesheets/application.scss';
 import App from "./components/app";
-import { UnmountComponentProvider } from "./components/animationContext";
+import { IsMobileComponentProvider } from "./components/isMobileContext";
 
 
 const root = document.getElementById('root');
 if (root) {
   ReactDOM.render(
     <Router>
-      <UnmountComponentProvider>
+      <IsMobileComponentProvider>
         <App />
-      </UnmountComponentProvider>
+      </IsMobileComponentProvider>
     </Router>,
     root
   );

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  height: 100vh;
 }
 
 .project {
@@ -13,6 +14,7 @@
   position: relative;
   background-position: center;
   background-size: cover;
+  height: 100%;
 }
 
 .project-info {
@@ -54,4 +56,19 @@
   position: absolute;
   bottom: 10px;
   right: 4%;
+}
+
+@media screen and (max-width: 720px) {
+  .projects-name {
+    grid-template-rows: repeat(3, 510px);
+    grid-template-columns: 1fr;
+    width: 80%;
+    grid-gap: 22px;
+    margin-top: 18px;
+  }
+  .project {
+    background-position: top;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    border-radius: 6px;
+  }
 }
