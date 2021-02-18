@@ -21,7 +21,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 1000px) {
   .contact-page {
     flex-direction: column;
   }

@@ -108,13 +108,13 @@
   z-index: 999;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1000px) {
   .navbar-element {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1000px) {
   .navbar-element-mobile {
     display: none !important;
   }
