@@ -24,20 +24,30 @@ function Project({
   };
 
   return (
-    <div
-      className="project"
-      style={{ backgroundImage }}
-      onMouseEnter={() => handleEnter()}
-      onMouseLeave={() => handleLeave()}
-    >
-      <div className="project-info" style={{ display }}>
-        <h1 className="project-name">{title}</h1>
-        <a href={link} target="_blank" rel="noreferrer" className="project-link">View Project</a>
-        <div className="project-icon">
-          {icon}
+    <>
+      <div
+        className="project"
+        style={{ backgroundImage }}
+        onMouseEnter={() => handleEnter()}
+        onMouseLeave={() => handleLeave()}
+      >
+        <div className="project-info" style={{ display }}>
+          <h1 className="project-name">{title}</h1>
+          <a href={link} target="_blank" rel="noreferrer" className="project-link">View Project</a>
+          <div className="project-icon">
+            {icon}
+          </div>
         </div>
       </div>
-    </div>
+      <div className="project-mobile" style={{ backgroundImage: `url("${back}")` }}>
+        <div className="project-name">
+          <h1>{title}</h1>
+          <div className="mobile-btn-div">
+            <a href={link} target="_blank" rel="noreferrer" className="project-btn-mobile">View Project</a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

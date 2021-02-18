@@ -21,11 +21,15 @@
   position: relative;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 720px) {
   .contact-page {
     flex-direction: column;
   }
   .map-right {
     height: 450px;
+  }
+  .form-left {
+    width: 330px;
+    padding: 12px;
   }
 }

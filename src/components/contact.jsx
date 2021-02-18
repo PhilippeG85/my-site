@@ -1,11 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import Form from "./form";
 import MapContainer from "./map";
-import { IsMobileComponent } from "./isMobileContext";
 
 function Contact() {
-  const { isMobile } = useContext(IsMobileComponent);
-  console.log(isMobile);
   return (
     <div className="contact-page">
       <div className="form-left">

@@ -21,3 +21,9 @@
   margin: 24px;
 }
 
+@media screen and (max-width: 720px) {
+  .presentation {
+    padding: 36px;
+    margin: 0 auto;
+  }
+}

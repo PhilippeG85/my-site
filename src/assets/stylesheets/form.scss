@@ -68,3 +68,16 @@
     outline: 0;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .style-form-left {
+    width: 305px;
+  }
+  .form, .form-name {
+    width: 305px;
+  }
+  .form-msg {
+    max-width: 305px;
+    min-width: 305px;
+  }
+}
